@@ -2,7 +2,7 @@
 function EditorPage() {
   return (
     <div>
-      Editor page
+      Editor Page
     </div>
   )
 }
