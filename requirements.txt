@@ -1,0 +1,5 @@
+# client side
+npm i react-router-dom
+
+# server side
+npm i cors nodemon express socket.io socket.io-client
