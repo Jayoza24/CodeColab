@@ -1,0 +1,27 @@
+:root {
+    --black: #272D2D;
+    --light-blue: #B8C5D6;
+    --white: #F3FCF0;
+}
+
+@font-face {
+    font-family: title-bold;
+    src: url(fonts/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: title-regular;
+    src: url(fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: content-regular;
+    src: url(fonts/coolvetica.ttf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}

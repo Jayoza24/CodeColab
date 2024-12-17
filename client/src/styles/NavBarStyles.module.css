@@ -1,0 +1,23 @@
+.navBar {
+    width: 40%;
+    height: 50px;
+    background-color: transparent;
+    border: 5px double var(--white);
+    border-radius: 50px;
+    position: fixed;
+    z-index: 999;
+    top: 5%;
+    left: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    backdrop-filter: blur(10px);
+}
+
+.navBar a{
+    font-family: "content-regular";
+    text-decoration: none;
+    color: var(--white);
+    font-size: 15px;
+}
