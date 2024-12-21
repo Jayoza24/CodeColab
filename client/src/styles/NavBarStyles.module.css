@@ -4,7 +4,7 @@
     background-color: transparent;
     border: 5px double var(--white);
     border-radius: 50px;
-    position: fixed;
+    position: absolute;
     z-index: 999;
     top: 5%;
     left: 30%;

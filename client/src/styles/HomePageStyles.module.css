@@ -28,12 +28,16 @@
     letter-spacing: 3px;
 }
 
-.colabCodeSec{
+.colabCodeSec {
+    height: 100vh;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .codeContents {
-    width: 100%;
+    width: 80%;
     height: 100vh;
     color: var(--light-blue);
     display: flex;
@@ -57,7 +61,7 @@
 }
 
 .codeContents .right {
-    width: 80%;
+    width: 50%;
     height: 100%;
     position: relative;
     display: flex;
@@ -65,27 +69,80 @@
     justify-content: center;
 }
 
-.codeContents .right .bg{
-    width: 80%;
-    height: 50%;
+.codeContents .right .bg {
+    width: 100%;
+    height: 60%;
     background-color: var(--light-blue);
     border-radius: 20px;
     border: 5px double var(--black);
 }
 
-.codeContents .right form{
+.codeContents .right form {
     position: absolute;
     color: var(--black);
     letter-spacing: 1px;
 }
 
-input[type="text"]{
-    width: 100%;
+.right form p {
+    font-size: 18px;
+}
+
+.right form span {
+    color: var(--black);
+    transition: all .5s;
+}
+
+.right form span:hover{
+    color: var(--white);
+}
+
+input[type="text"] {
+    width: 80%;
     height: 20px;
     padding: 20px;
     border-radius: 20px;
     border: 0 none;
-    margin: 10px 0; 
+    margin: 10px 0;
     font-family: "content-regular";
     font-size: 15px;
+}
+
+.right form button {
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    background-color: var(--light-blue);
+    border: 4px double var(--black);
+    letter-spacing: 5px;
+    transition: all 1s;
+}
+
+button:hover {
+    background: var(--white);
+}
+
+.bg {
+    --s: 80px;
+
+    --_g: radial-gradient(#F4EAD5 31%, #0000 32%);
+    --_l: radial-gradient(#594F4F 15%, #0000 16%);
+    background: var(--_l), var(--_l), var(--_g), var(--_g), #45ADA8;
+    background-position: 0 0, var(--s) var(--s);
+    background-size: calc(2*var(--s)) calc(2*var(--s));
+    animation:
+        x 2s cubic-bezier(0.5, 92, 0.5, -92) infinite,
+        y 2s cubic-bezier(0.5, 92, 0.5, -92) infinite -.5s;
+}
+
+@keyframes x {
+    to {
+        background-position-x: -.25px, calc(var(--s) - 1px), -.5px, calc(var(--s) - .5px);
+    }
+}
+
+@keyframes y {
+    to {
+        background-position-y: -.25px, calc(var(--s) - 1px), .25px, calc(var(--s) - .5px);
+    }
 }
