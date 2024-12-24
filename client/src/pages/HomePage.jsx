@@ -100,7 +100,7 @@ function HomePage() {
                 JOIN
               </button>
               <p>
-                Don't have a room
+                Don&apos;t have a room?
                 <span onClick={handleCreateClick}>create now</span>
               </p>
             </form>
