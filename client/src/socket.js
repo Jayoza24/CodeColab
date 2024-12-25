@@ -9,5 +9,5 @@ export const initSocket = async () => {
   };
 
   // eslint-disable-next-line no-undef
-  return io("http://localhost:5000", options);
+  return io("https://codecolab-backend.onrender.com", options);
 };
